@@ -99,7 +99,7 @@ function removeResumeStep(k: number, subK: number) {
               <n-date-picker style="width: 100%" type="date" v-model:value="subV.end_time" />
             </n-form-item-gi>
             <n-form-item-gi :label="t('editPage.resumeInfo.responsibilities')" :span="24">
-              <n-input type="textarea" style="width: 100%" v-model:value="subV.responsibilities" />
+              <n-input type="textarea" style="width: 100%" v-model:value="subV.responsibilities" :placeholder="t('editPage.resumeInfo.responsibilitiesHelper')"/>
             </n-form-item-gi>
           </n-grid>
         </n-card>
@@ -112,7 +112,7 @@ function removeResumeStep(k: number, subK: number) {
           {{ t('editPage.resumeInfo.addStep') }}
         </n-button>
         <n-form-item :label="t('editPage.resumeInfo.achievement')">
-          <n-input type="textarea" v-model:value="cvStore.cv.cv_resume[k].achievement" />
+          <n-input type="textarea" v-model:value="cvStore.cv.cv_resume[k].achievement" :placeholder="t('editPage.resumeInfo.achievementHelper')"/>
         </n-form-item>
       </n-form>
     </n-card>

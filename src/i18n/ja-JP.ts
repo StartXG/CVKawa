@@ -54,7 +54,9 @@ export default {
       startDate: '開始日',
       endDate: '終了日',
       responsibilities: '職務',
+      responsibilitiesHelper: '主な職務。日常業務の基本内容',
       achievement: '業績',
+      achievementHelper: '主な業績。データをできるだけ量化し、次に一般的な業績を記述します。視点としては、まず会社にもたらされた価値を書くことが好ましいです',
       action: {
         action: '操作',
         delete: '削除'

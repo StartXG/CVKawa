@@ -54,7 +54,9 @@ export default {
       startDate: 'Start Date',
       endDate: 'End Date',
       responsibilities: 'Responsibilities',
+      responsibilitiesHelper: 'Main responsibilities. The basic content of daily work',
       achievement: 'Achievement',
+      achievementHelper: 'Main achievements. Quantify as much as possible on data, and then write general achievements. In terms of perspective, it is preferable to write the value brought to the company first',
       action: {
         action: 'Action',
         delete: 'Delete'

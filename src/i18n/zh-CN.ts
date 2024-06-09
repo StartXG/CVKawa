@@ -54,7 +54,9 @@ export default {
       startDate: '开始日期',
       endDate: '结束日期',
       responsibilities: '职责',
+      responsibilitiesHelper: '主要职责。日常工作的基本内容',
       achievement: '成果',
+      achievementHelper: '主要成果。数据上能够量化尽量量化，其次写大体成果。视角上可以优先写为公司带来的价值',
       action: {
         action: '操作',
         delete: '删除'
