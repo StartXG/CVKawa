@@ -54,7 +54,7 @@ export default {
       startDate: '开始日期',
       endDate: '结束日期',
       responsibilities: '职责',
-      achievement: '业绩',
+      achievement: '成果',
       action: {
         action: '操作',
         delete: '删除'
@@ -80,6 +80,6 @@ export default {
     cvLoaded: '简历加载完成',
     empty: '暂无简历，先创建',
     responsibilities: '职责',
-    achievement: '业绩'
+    achievement: '成果'
   }
 }
