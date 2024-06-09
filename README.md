@@ -20,3 +20,7 @@ cp jtp-aarch64-apple-darwin <project path>/src-tauri/jtp-aarch64-apple-darwin
 cd  <project path>
 pnpm/yarn run taurib
 ```
+
+## Important
+
+When you build the app for msvc[windows brach] you need the lib file for sqlite, in the project we support the file, but it build for `x64` system
