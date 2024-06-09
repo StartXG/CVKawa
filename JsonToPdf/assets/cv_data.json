@@ -1,0 +1,34 @@
+{
+  "cv_base_info": {
+    "name": "CVKawa",
+    "birthday": 901209600000,
+    "mobile": 1834562345,
+    "email": "example@example.com",
+    "photo_path": "./photo.png"
+  },
+  "cv_edu_info": [
+    {
+      "school": "xxx大学",
+      "major": "xx工程",
+      "academic_degree": "本科",
+      "start_time": 1472659200000,
+      "end_time": 1593273600000
+    }
+  ],
+  "cv_resume": [
+    {
+      "company": "xxx公司",
+      "resume_steps": [
+        {
+          "position": "PM",
+          "department": "PM",
+          "start_time": 1623686400000,
+          "end_time": 1717084800000,
+          "responsibilities": "dsadfsafsafaf\ndasfasfdsafsafa"
+        }
+      ],
+      "achievement": "sdafghsaokjfjsaklfjsalkfhusaoifjsaklfbfhksfbsafbsfhjsa"
+    }
+  ],
+  "cv_skills": []
+}

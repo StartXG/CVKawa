@@ -1,0 +1,44 @@
+{
+  "name": "cv-kawa",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "taurid": "tauri dev",
+    "taurib": "tauri build",
+    "tauri": "tauri",
+    "format": "prettier --write \"src/**/*.{js,vue,json,ts}\""
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1",
+    "naive-ui": "^2.38.2",
+    "pinia": "^2.1.7",
+    "vfonts": "^0.0.3",
+    "vue": "^3.3.4",
+    "vue-i18n": "9",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@tauri-apps/cli": "^1",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.12.5",
+    "@vicons/fluent": "^0.12.0",
+    "@vitejs/plugin-vue": "~5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "npm-run-all2": "^6.1.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.0.2",
+    "vite": "^5.2.8",
+    "vite-plugin-vue-devtools": "^7.2.1",
+    "vue-tsc": "^2.0.17"
+  }
+}

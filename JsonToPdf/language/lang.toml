@@ -1,0 +1,27 @@
+[zh-CN]
+Education="教育"
+Resume="履历"
+ResumeSteps="阶段履历"
+Achievement="成就"
+Skills="技能"
+DateFormat="2006年01月"
+DateFullFormat="2006年01月02日"
+
+[ja-JP]
+Education="教育"
+Resume="仕事履歴"
+ResumeSteps="履歴段階"
+Achievement="実績"
+Skills="スキル"
+DateFormat="2006年01月"
+DateFullFormat="2006年01月02日"
+
+[en-US]
+Education="Education"
+Resume="Resume"
+ResumeSteps="Resume Steps"
+Achievement="Achievement"
+Skills="Skills"
+DateFormat="2006-01"
+DateFullFormat="01-02-2006"
+
