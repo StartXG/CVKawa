@@ -3,7 +3,7 @@ if [ "$1" = "linux" ]; then
 elif [ "$1" = "linux-arm" ]; then
     GOOS=linux GOARCH=arm64 go build -o ./jtp cmd/main.go
 elif [ "$1" = "windows" ]; then
-    GOOS=windows GOARCH=amd64 go build -o ./jtp.exe cmd/main.go
+    GOOS=windows GOARCH=amd64 go build -o ./jtp-x86_64-pc-windows-msvc.exe cmd/main.go
 elif [ "$1" = "mac" ]; then
     GOOS=darwin GOARCH=amd64 go build -o ./jtp cmd/main.go
 elif [ "$1" = "mac-m" ]; then
