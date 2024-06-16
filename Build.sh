@@ -9,6 +9,6 @@ ARCH=$(rustc -Vv | grep host | cut -f2 -d' ')
 cd ./JsonToPdf  || exit
 go build -o "jtp-${ARCH}" cmd/main.go
 
-cp "./JsonToPdf/jtp-${ARCH}" ./src-tauri/assets/
+mv "./JsonToPdf/jtp-${ARCH}" ./src-tauri/assets/
 pnpm run taurib
 
