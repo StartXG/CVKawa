@@ -1,5 +1,14 @@
+
+# Install frontend
+pnpm install
+
+ARCH=$(rustc -Vv | grep host | cut -f2 -d' ')
+
+
+# build jtp
 cd ./JsonToPdf  || exit
-sh Build.sh $1
-cd ..
-cp ./JsonToPdf/jtp* ./src-tauri/assets/
+go build -o "jtp-${ARCH}" cmd/main.go
+
+cp "./JsonToPdf/jtp-${ARCH}" ./src-tauri/assets/
 pnpm run taurib
+
