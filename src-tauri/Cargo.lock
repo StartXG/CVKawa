@@ -738,7 +738,7 @@ dependencies = [
 
 [[package]]
 name = "cv-kawa"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "rusqlite",
  "serde",
