@@ -1,9 +1,7 @@
 Build.sh
 JsonToPdf/jtp*
 src-tauri/assets/jtp*
-
-Build.sh
-bUILD.PS1
+Build.PS1
 
 # Logs
 logs
