@@ -7,7 +7,7 @@
   },
   "package": {
     "productName": "cv-kawa",
-    "version": "0.0.1"
+    "version": "0.0.2"
   },
   "tauri": {
     "allowlist": {
@@ -72,7 +72,10 @@
     },
     "bundle": {
       "active": true,
-      "targets": "all",
+      "targets": [
+        "dmg",
+        "updater"
+      ],
       "identifier": "com.tauri.build",
       "icon": [
         "icons/32x32.png",
@@ -88,10 +91,13 @@
     "updater": {
       "active": true,
       "endpoints": [
-        "https://www.cvkawa.com/releases/latest"
+        "https://www.cvkawa.com/api/releases/latest"
       ],
       "dialog": true,
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDE3MjI4OEM1RUNEOEY3MEIKUldRTDk5anN4WWdpRjEzZHE5RFdyc2RoeUVHeWxmWUw4SUw1dTJxQUVGTkt2aVplUjRLRVM3WU8K%"
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDRERjIyRjYyN0YzN0EyOEUKUldTT29qZC9ZaS95VGFTNFI2MTdIWTBHS3ZpWDczZWJPZWJPaHRFVlVGV3VYelZpQjNtaDdZNXkK",
+      "windows": {
+        "installMode": "passive"
+      }
     }
   }
 }
