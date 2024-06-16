@@ -94,7 +94,7 @@
         "https://www.cvkawa.com/api/releases/latest"
       ],
       "dialog": true,
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDRERjIyRjYyN0YzN0EyOEUKUldTT29qZC9ZaS95VGFTNFI2MTdIWTBHS3ZpWDczZWJPZWJPaHRFVlVGV3VYelZpQjNtaDdZNXkK",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEVFQjI1NDE1QTM3NzU4ODEKUldTQldIZWpGVlN5N3Jzb3FkMDQ0MWpzREpXdnVqcm5mVXF0QmN5T1VHY2NIaDNtQXdHRHlzL0MK",
       "windows": {
         "installMode": "passive"
       }
