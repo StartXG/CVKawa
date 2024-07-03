@@ -114,9 +114,12 @@ func addEduInfo(pdf *gofpdf.Fpdf, data *[]common.CvEduInfo, c *nextPoint, lang s
 	if len(*data) == 0 {
 		return pdf, c
 	}
-	pdf, c = blockTitle(pdf, language.GetLangFile(lang, "Education"), "a4", BoldFont)
+	pdf, _ = blockTitle(pdf, language.GetLangFile(lang, "Education"), "a4", BoldFont)
 	rowWidth := pdf.GetPageSizeStr("a4").Wd - 2*pdf.PointConvert(common.MmToPt(10))
-	for _, v := range *data {
+	for k, v := range *data {
+		if k != 0 {
+			pdf.Ln(common.MmToPt(5))
+		}
 		pdf.SetFont(BoldFont, "", Title3Size)
 		pdf.CellFormat(
 			rowWidth,
@@ -163,7 +166,7 @@ func addSkills(pdf *gofpdf.Fpdf, data *common.CvSkills, c *nextPoint, lang strin
 	if len(*data) == 0 {
 		return pdf, c
 	}
-	pdf, c = blockTitle(pdf, language.GetLangFile(lang, "Skills"), "a4", BoldFont)
+	pdf, _ = blockTitle(pdf, language.GetLangFile(lang, "Skills"), "a4", BoldFont)
 	pdf.SetFont(RegularFont, "", ContentSize)
 	for k, v := range *data {
 		pdf.CellFormat(
@@ -287,8 +290,8 @@ func Gen(pdf *gofpdf.Fpdf, data *common.JsonSchema, fileFullPath string, lang st
 	c := &nextPoint{X: 0, Y: 0}
 	pdf, c = addBaseInfo(pdf, &data.CvBaseInfo, lang)
 	pdf, c = addEduInfo(pdf, &data.CvEduInfo, c, lang)
-	pdf, c = addSkills(pdf, &data.CvSkills, c, lang)
-	pdf, _ = addResume(pdf, &data.CvResume, c, lang)
+	pdf, c = addResume(pdf, &data.CvResume, c, lang)
+	pdf, _ = addSkills(pdf, &data.CvSkills, c, lang)
 
 	err := pdf.OutputFileAndClose(fileFullPath)
 	if err != nil {
